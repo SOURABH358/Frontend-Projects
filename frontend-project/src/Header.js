@@ -2,7 +2,7 @@ import React from "react";
 
 function Header(){
     return (<section className="header__section">
-        <title></title>
+        <h1 className="title">Frontend Projects</h1>
         <div className="mode">
             <div className="mode__switch"></div>
         </div>
