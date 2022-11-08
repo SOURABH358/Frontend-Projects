@@ -30,7 +30,8 @@ a{
 }
 .title{
     text-align: center;
-    padding-top: 2.5rem;
+    padding-top: 1.5rem;
+    font-size: 3rem;
 }
 .mode{
     position: absolute;
@@ -77,4 +78,8 @@ a{
 .social__links li a:hover{
     background-color: white;
     color: darkslateblue;
+}
+.main__section{
+    min-height: 60vh;
+    width: 100%;
 }
