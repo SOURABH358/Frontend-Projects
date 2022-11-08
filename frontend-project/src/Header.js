@@ -13,4 +13,4 @@ function Header({mode, setMode}){
         </div>
     </section>)
 }
-export default Header
+export default React.memo(Header)
