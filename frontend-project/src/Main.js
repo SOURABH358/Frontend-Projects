@@ -1,8 +1,8 @@
 import React from "react";
 
-function Main(){
-    return <section className="main__section">
-        
+function Main({mode}){
+    return <section className={`main__section ${mode}`}>
+
     </section>
 }
 export default Main
