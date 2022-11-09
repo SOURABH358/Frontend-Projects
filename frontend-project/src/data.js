@@ -106,38 +106,38 @@ const projects = [
     },
     {
         id: '16',
-        title: '',
+        title: 'Time Tracking Dashboard',
         image: '',
-        link: '',
-        tags: ''
+        link: 'https://musical-gelato-07fe55.netlify.app/',
+        tags: 'tailwind'
     },
     {
         id: '17',
-        title: '',
+        title: 'Project preview card component',
         image: '',
-        link: '',
-        tags: ''
+        link: 'https://thriving-mandazi-5946cd.netlify.app/',
+        tags: 'tailwind'
     },
     {
         id: '18',
-        title: '',
+        title: 'QR Code Generator',
         image: '',
-        link: '',
-        tags: ''
+        link: 'https://sourabh358.github.io/100_projects.github.io/project-18/index.html',
+        tags: 'css, javascript'
     },
     {
         id: '19',
-        title: '',
+        title: 'Email Validator',
         image: '',
-        link: '',
-        tags: ''
+        link: 'https://sourabh358.github.io/100_projects.github.io/project-19/index.html',
+        tags: 'css, javascript'
     },
     {
         id: '20',
-        title: '',
+        title: 'Speech To Text',
         image: '',
-        link: '',
-        tags: ''
+        link: 'https://sourabh358.github.io/100_projects.github.io/project-20/index.html',
+        tags: 'css, javascript'
     },
 ]
 
