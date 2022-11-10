@@ -139,6 +139,13 @@ const projects = [
         link: 'https://sourabh358.github.io/100_projects.github.io/project-20/index.html',
         tags: 'css, javascript'
     },
+    {
+        id: '21',
+        title: 'News Homepage',
+        image: '',
+        link: 'https://sourabh358.github.io/100_projects.github.io/project-21/index.html',
+        tags: 'css, javascript'
+    }
 ]
 
 export default projects
