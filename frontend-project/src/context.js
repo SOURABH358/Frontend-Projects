@@ -9,12 +9,19 @@ function AppProvider(){
     const [globalState, dispatch] = useReducer(reducer, initialState);
 
     const fetchData = ()=>{
-        useEffect(()=>{
-            dispatch({type: 'FETCH_DATA', payload: projects})
-        },[])
+
+        dispatch({type: 'FETCH_DATA', payload: projects})
+       
     }
+
+    useEffect(()=>{
+        fetchData()
+    },[])
     return(
-        <AppContext.Provider>
+        <AppContext.Provider value = 
+        {
+            ...globalState
+        }>
 
         </AppContext.Provider>
     )
