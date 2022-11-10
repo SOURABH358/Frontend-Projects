@@ -1,23 +1,26 @@
 import React, { useContext, useEffect, useReducer } from 'react'
 import reducer from './reducer';
 import projects from './data';
-const initialState = {
+let initialState = {
     data: [],
     currentTag: 'All',
     tags: []
 }
 const AppContext = React.createContext();
-function AppProvider() {
+function AppProvider({children}) {
     const [globalState, dispatch] = useReducer(reducer, initialState);
 
     const fetchData = () => {
-        const tags = [...new Set(projects.map(project => {
+        let tagsList = [...new Set(projects.map(project => {
             return project.tags
         })
         .join(', ')
         .split(", "))]
-        console.log(tags)
-        dispatch({ type: 'FETCH_DATA', payload: projects })
+        let tags = tagsList.map(el=>{
+            return {title: el, active: false}
+        })
+        tags.unshift({title: 'all', current: true})
+        dispatch({ type: 'FETCH_DATA', payload: {tags, projects} })
 
     }
 
@@ -25,11 +28,11 @@ function AppProvider() {
         fetchData()
     }, [])
     return (
-        <AppContext.Provider value=
+        <AppContext.Provider value={
             {
                 ...globalState
-            }>
-
+            }}>
+                {children}
         </AppContext.Provider>
     )
 }
