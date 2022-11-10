@@ -1,34 +1,41 @@
-import React, {useContext, useEffect, useReducer} from 'react'
+import React, { useContext, useEffect, useReducer } from 'react'
 import reducer from './reducer';
 import projects from './data';
 const initialState = {
-    data: []
+    data: [],
+    currentTag: 'All',
+    tags: []
 }
 const AppContext = React.createContext();
-function AppProvider(){
+function AppProvider() {
     const [globalState, dispatch] = useReducer(reducer, initialState);
 
-    const fetchData = ()=>{
+    const fetchData = () => {
+        const tags = [...new Set(projects.map(project => {
+            return project.tags
+        })
+        .join(', ')
+        .split(", "))]
+        console.log(tags)
+        dispatch({ type: 'FETCH_DATA', payload: projects })
 
-        dispatch({type: 'FETCH_DATA', payload: projects})
-       
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         fetchData()
-    },[])
-    return(
-        <AppContext.Provider value = 
-        {
-            ...globalState
-        }>
+    }, [])
+    return (
+        <AppContext.Provider value=
+            {
+                ...globalState
+            }>
 
         </AppContext.Provider>
     )
 }
 
-const GlobalContext = ()=>{
+const GlobalContext = () => {
     return useContext(AppContext)
 }
 
-export {AppProvider, GlobalContext}
+export { AppProvider, GlobalContext }
