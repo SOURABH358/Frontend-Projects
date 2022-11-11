@@ -110,6 +110,7 @@ a{
     color: black;
     font-size: 3rem;
     margin-bottom: 1rem;
+    font-weight: normal;
 }
 .tags__box{
     display: flex;
@@ -118,10 +119,11 @@ a{
 }
 .tag{
     border: none;
-    border: 2px solid darkslateblue;
+    /* border: 2px solid darkslateblue; */
     border-radius: 0.25rem;
-    padding: 0.2rem 0.25rem;
-    background-color: var(--light-purple);
+    padding: 0.3rem 0.5rem;
+    /* background-color: var(--light-purple); */
+    background-color: white;
     color: black;
     cursor: pointer;
 }

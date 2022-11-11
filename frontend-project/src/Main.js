@@ -13,7 +13,7 @@ function Main({ mode }) {
     }
     const displayCards = () => {
         return data.map(card => {
-            return <a key={card.id} href={card.link}>
+            return <a key={card.id} href={card.link} target = "blank">
                 <div className="card">
                     <div className="card__hero"><img src={card.image} /></div>
                     <h2>{card.title}</h2>

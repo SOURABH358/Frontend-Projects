@@ -3,63 +3,63 @@ const projects = [
         id: '1',
         title: 'Food Menu Filter',
         image: './images/project-1.jpg',
-        link: 'https://sourabh358.github.io/100_projects.github.io/project-1/index2.html',
+        link: 'https://sourabh358.github.io/100_projects.github.io/project-01/index2.html',
         tags: 'css, javascript'
     },
     {
         id: '2',
         title: 'Grocery Bud',
         image: './images/project-1.jpg',
-        link: 'https://sourabh358.github.io/100_projects.github.io/project-2/grocery.html',
+        link: 'https://sourabh358.github.io/100_projects.github.io/project-02/grocery.html',
         tags: 'css, javascript'
     },
     {
         id: '3',
         title: 'Responsive Tabs',
         image: './images/project-1.jpg',
-        link: 'https://sourabh358.github.io/100_projects.github.io/project-3/index.html',
+        link: 'https://sourabh358.github.io/100_projects.github.io/project-03/index.html',
         tags: 'css, javascript'
     },
     {
         id: '4',
         title: 'Calculator App',
         image: './images/project-1.jpg',
-        link: 'https://sourabh358.github.io/100_projects.github.io/project-4/',
+        link: 'https://sourabh358.github.io/100_projects.github.io/project-04/',
         tags: 'javascript, sass'
     },
     {
         id: '5',
         title: 'NFT Card',
         image: './images/project-1.jpg',
-        link: 'https://sourabh358.github.io/100_projects.github.io/project-5/',
+        link: 'https://sourabh358.github.io/100_projects.github.io/project-05/',
         tags: 'css'
     },
     {
         id: '6',
         title: 'Advice Generator App',
         image: './images/project-1.jpg',
-        link: 'https://sourabh358.github.io/100_projects.github.io/project-6/',
+        link: 'https://sourabh358.github.io/100_projects.github.io/project-06/',
         tags: 'javascript, sass, api'
     },
     {
         id: '7',
         title: 'Animated Website',
         image: './images/project-1.jpg',
-        link: 'https://sourabh358.github.io/100_projects.github.io/project-7/',
+        link: 'https://sourabh358.github.io/100_projects.github.io/project-07/',
         tags: 'css, javascript'
     },
     {
         id: '8',
         title: 'Animated Cards',
         image: './images/project-1.jpg',
-        link: 'https://sourabh358.github.io/100_projects.github.io/project-8/',
+        link: 'https://sourabh358.github.io/100_projects.github.io/project-08/',
         tags: 'css, javascript'
     },
     {
         id: '9',
         title: 'Remote work landing page',
         image: './images/project-1.jpg',
-        link: 'https://sourabh358.github.io/100_projects.github.io/project-9/',
+        link: 'https://sourabh358.github.io/100_projects.github.io/project-09/',
         tags: 'sass, javascript'
     },
     {
