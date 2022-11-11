@@ -10,6 +10,14 @@ function Main({ mode }) {
                 </button>
         })
     }
+    const displayCards = () =>{
+        return data.map(card=>{
+            return <a href = {card.link}><div className="card">
+                <div className="card__hero"><img src = {card.image}/></div>
+                <h2>{card.title}</h2>
+                </div></a>
+        })
+    }
     if (!data.length) {
         return
         (<section className={`main__section ${mode}`}>
@@ -24,7 +32,7 @@ function Main({ mode }) {
             </div>
         </div>
         <div className="card__container">
-
+            {displayCards()}
         </div>
     </section>
 }
