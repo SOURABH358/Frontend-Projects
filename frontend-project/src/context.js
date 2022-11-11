@@ -23,7 +23,7 @@ function AppProvider({children}) {
 
     }
     const changeTag = (tagName)=>{
-        dispatch({type: 'CHANGE_TAG', payload: {tagName}})
+        dispatch({type: 'CHANGE_TAG', payload: {tagName, data: [...projects]}})
         console.log(globalState.tags)
     }
     useEffect(() => {

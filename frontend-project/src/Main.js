@@ -1,20 +1,22 @@
 import React from "react";
 import { GlobalContext } from "./context";
+// import images from '../public/images/project-14.jpg'
 
 function Main({ mode }) {
     const { data, tags, changeTag } = GlobalContext()
     const displayTags = () => {
         return tags.map((tag, index) => {
-            return <button key = {index} className={tag.active ? 'tag active' : 'tag'} type="button" onClick={() => changeTag(tag.title)}>
+            return <button key={index} className={tag.active ? 'tag active' : 'tag'} type="button" onClick={() => changeTag(tag.title)}>
                 {tag.title[0].toUpperCase() + tag.title.substr(1)}
-                </button>
+            </button>
         })
     }
-    const displayCards = () =>{
-        return data.map(card=>{
-            return <a href = {card.link}><div className="card">
-                <div className="card__hero"><img src = {card.image}/></div>
-                <h2>{card.title}</h2>
+    const displayCards = () => {
+        return data.map(card => {
+            return <a key={card.id} href={card.link}>
+                <div className="card">
+                    <div className="card__hero"><img src={card.image} /></div>
+                    <h2>{card.title}</h2>
                 </div></a>
         })
     }
