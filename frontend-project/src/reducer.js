@@ -4,8 +4,18 @@ const reducer = (state, action)=>{
     {
         return {
             data: [...action.payload.projects],
-            tags: [...action.payload.tags],
-            currentTag: 'all'
+            tags: [...action.payload.tags]
+        }
+    }
+    if(action.type === 'CHANGE_TAG')
+    {
+        return {
+            ...state,
+            tags: state.tags.map(el=>{
+                if(el.title === action.payload)
+                    return {title: action.payload, current: true} 
+                return {...el, current: false};
+            })
         }
     }
 }

@@ -3,7 +3,6 @@ import reducer from './reducer';
 import projects from './data';
 let initialState = {
     data: [],
-    currentTag: 'All',
     tags: []
 }
 const AppContext = React.createContext();
@@ -23,14 +22,18 @@ function AppProvider({children}) {
         dispatch({ type: 'FETCH_DATA', payload: {tags, projects} })
 
     }
-
+    const changeTag = (tagName)=>{
+        dispatch({type: 'CHANGE_TAG', payload: {tagName}})
+    }
     useEffect(() => {
         fetchData()
     }, [])
+    
     return (
         <AppContext.Provider value={
             {
-                ...globalState
+                ...globalState,
+                changeTag
             }}>
                 {children}
         </AppContext.Provider>

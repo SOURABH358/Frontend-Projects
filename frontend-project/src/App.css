@@ -94,8 +94,25 @@ a{
 .main__section{
     min-height: 60vh;
     width: 100%;
+    padding: 4rem;
 }
 .dark{
     background-color: var(--dark-black);
     background-image: linear-gradient(90deg, var(--dark-black), var(--light-black));
+}
+.tags_container{
+    width: 100%;
+}
+.tags__box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.tag{
+    border: none;
+    border: 2px solid darkslateblue;
+    border-radius: 0.25rem;
+    padding: 0.2rem 0.25rem;
+    background-color: var(--light-purple);
+    color: black
 }
