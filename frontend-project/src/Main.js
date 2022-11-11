@@ -4,8 +4,8 @@ import { GlobalContext } from "./context";
 function Main({ mode }) {
     const { data, tags, changeTag } = GlobalContext()
     const displayTags = () => {
-        return tags.map(tag => {
-            return <button className={tag.current ? 'tag active' : 'tag'} type="button" onClick={() => changeTag(tag.title)}>
+        return tags.map((tag, index) => {
+            return <button key = {index} className={tag.active ? 'tag active' : 'tag'} type="button" onClick={() => changeTag(tag.title)}>
                 {tag.title[0].toUpperCase() + tag.title.substr(1)}
                 </button>
         })

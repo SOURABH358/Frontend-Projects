@@ -94,7 +94,9 @@ a{
 .main__section{
     min-height: 60vh;
     width: 100%;
-    padding: 4rem;
+    padding: 0 4rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
 }
 .dark{
     background-color: var(--dark-black);
@@ -105,7 +107,7 @@ a{
 }
 .tag__title{
     color: black;
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
 }
 .tags__box{
@@ -119,5 +121,13 @@ a{
     border-radius: 0.25rem;
     padding: 0.2rem 0.25rem;
     background-color: var(--light-purple);
-    color: black
+    color: black;
+    cursor: pointer;
+}
+.dark .tag__title{
+    color: white;
+}
+.active{
+    background-color: darkslateblue;
+    color: white;
 }

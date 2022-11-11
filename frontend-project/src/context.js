@@ -18,12 +18,13 @@ function AppProvider({children}) {
         let tags = tagsList.map(el=>{
             return {title: el, active: false}
         })
-        tags.unshift({title: 'all', current: true})
+        tags.unshift({title: 'all', active: true})
         dispatch({ type: 'FETCH_DATA', payload: {tags, projects} })
 
     }
     const changeTag = (tagName)=>{
         dispatch({type: 'CHANGE_TAG', payload: {tagName}})
+        console.log(globalState.tags)
     }
     useEffect(() => {
         fetchData()

@@ -12,9 +12,9 @@ const reducer = (state, action)=>{
         return {
             ...state,
             tags: state.tags.map(el=>{
-                if(el.title === action.payload)
-                    return {title: action.payload, current: true} 
-                return {...el, current: false};
+                if(el.title === action.payload.tagName)
+                    return {...el, active: true} 
+                return {...el, active: false};
             })
         }
     }
