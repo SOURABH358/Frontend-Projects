@@ -103,6 +103,11 @@ a{
 .tags_container{
     width: 100%;
 }
+.tag__title{
+    color: black;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
 .tags__box{
     display: flex;
     flex-wrap: wrap;

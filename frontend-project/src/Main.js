@@ -20,7 +20,7 @@ function Main({ mode }) {
         <div className="tags__container">
             <h2 className="tag__title">Tags</h2>
             <div className="tags__box">
-                {displayTags}
+                {displayTags()}
             </div>
         </div>
         <div className="card__container">
