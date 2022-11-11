@@ -9,49 +9,49 @@ const projects = [
     {
         id: '2',
         title: 'Grocery Bud',
-        image: './images/project-1.jpg',
+        image: './images/project-2.jpg',
         link: 'https://sourabh358.github.io/100_projects.github.io/project-02/grocery.html',
         tags: 'css, javascript'
     },
     {
         id: '3',
         title: 'Responsive Tabs',
-        image: './images/project-1.jpg',
+        image: './images/project-3.jpg',
         link: 'https://sourabh358.github.io/100_projects.github.io/project-03/index.html',
         tags: 'css, javascript'
     },
     {
         id: '4',
         title: 'Calculator App',
-        image: './images/project-1.jpg',
+        image: './images/project-4.jpg',
         link: 'https://sourabh358.github.io/100_projects.github.io/project-04/',
         tags: 'javascript, sass'
     },
     {
         id: '5',
         title: 'NFT Card',
-        image: './images/project-1.jpg',
+        image: './images/project-5.jpg',
         link: 'https://sourabh358.github.io/100_projects.github.io/project-05/',
         tags: 'css'
     },
     {
         id: '6',
         title: 'Advice Generator App',
-        image: './images/project-1.jpg',
+        image: './images/project-6.jpg',
         link: 'https://sourabh358.github.io/100_projects.github.io/project-06/',
         tags: 'javascript, sass, api'
     },
     {
         id: '7',
         title: 'Animated Website',
-        image: './images/project-1.jpg',
+        image: './images/project-7.jpg',
         link: 'https://sourabh358.github.io/100_projects.github.io/project-07/',
         tags: 'css, javascript'
     },
     {
         id: '8',
         title: 'Animated Cards',
-        image: './images/project-1.jpg',
+        image: './images/project-8.jpg',
         link: 'https://sourabh358.github.io/100_projects.github.io/project-08/',
         tags: 'css, javascript'
     },
