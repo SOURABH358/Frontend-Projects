@@ -2,14 +2,14 @@ const projects = [
     {
         id: '1',
         title: 'Food Menu Filter',
-        image: './images/project-1.jpg',
+        image: './images/project-1.png',
         link: 'https://sourabh358.github.io/100_projects.github.io/project-01/index2.html',
         tags: 'css, javascript'
     },
     {
         id: '2',
         title: 'Grocery Bud',
-        image: './images/project-2.jpg',
+        image: './images/project-2.png',
         link: 'https://sourabh358.github.io/100_projects.github.io/project-02/grocery.html',
         tags: 'css, javascript'
     },

@@ -108,7 +108,7 @@ a{
 }
 .tag__title{
     color: black;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     font-weight: normal;
 }
@@ -126,6 +126,9 @@ a{
     background-color: white;
     color: black;
     cursor: pointer;
+}
+.tag:hover{
+    background-color: var(--light-purple);
 }
 .dark .tag__title{
     color: white;
